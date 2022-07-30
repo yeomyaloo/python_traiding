@@ -57,8 +57,7 @@ def load_contact(contact_list):
         email = lines[4 * i +2].rstrip('\n')
         addr = lines[4 * i +3].rstrip('\n')
         contact = Contact(name,phone,email,addr)
-        contact_list.append(contact)
-    f.close()
+        contact_list.append(contact)    f.close()
 
 def run():
     contact_list = []
